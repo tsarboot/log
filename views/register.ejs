@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register</title>
+  </head>
+  <body style="text-align: center;">
+    <p style="color: red;">
+      <%= msg%>
+    </p>
+    <form action="/register" method="POST">
+      <label>name</label>
+      <input name="name" type="text" required /><br />
+      <label>email</label>
+      <input name="mail" type="email" required /><br />
+      <label>password</label>
+      <input name="pass" type="password" required /><br />
+      <label>repeat password</label>
+      <input name="pass2" type="password" required /><br />
+      <input type="submit" value="register" /><br />
+    </form>
+  </body>
+</html>
